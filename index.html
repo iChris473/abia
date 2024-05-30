@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abia State - Public Financial Management Portal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=DM+Sans:opsz@9..40&family=Nunito:wght@300&family=Poppins:wght@500&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        dark: '#070c01',
+                        ggreen: '#68b38b',
+                        ggold: '#b3a968',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.2.0/chartjs-plugin-datalabels.min.js"
+        integrity="sha512-JPcRR8yFa8mmCsfrw4TNte1ZvF1e3+1SdGMslZvmrzDYxS69J7J49vkFL8u6u8PlPJK+H3voElBtUCzaXj+6ig=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body class="relative min-h-screen w-screen overflow-x-hidden">
+    <img src="/assets/bg.jpeg" alt="bg" class="absolute w-full h-full -z-20">
+    
+    <section class="flex items-start justify-center">
+        <!-- FIRST SIDE -->
+        <div class="w-[25%] pt-5">
+            <div class="flex-center flex-col">
+                <div class="relative w-full">
+                    <img src="/assets/logo.png" alt="logo" class="h-24 centered-abs-x bg-white circle">
+                    <div class="bg-[#6a8c5a] p-5 mt-20">
+                        <h1 class="text-center roman text-white">PUBLIC FINANCIAL MANAGEMENT PORTAL</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-[#e8e6d8] min-h-[500px] mt-2 border border-[#bab7a1] p-3">
+                <img src="/assets/otti.png" alt="Alex Otti" class="w-[90%] object-contain mx-auto mt-5">
+                <p class="text-sm text-center nunito mt-3">
+                    HE. Governor, Alex Otti, has signed the 2024 Appropriation Bill of N567.2 billion, into law.
+                    <br>
+                    While signing the bill, the Governor said the 2024 Budget would move Abia from its current level of underdevelop
+                </p>
+                <img src="/assets/otti2.png" alt="Alex Otti" class="w-[90%] object-contain mx-auto mt-5">
+                <p class="text-sm text-center nunito mt-3 mb-10">
+                    We Are Moving to Solve Problem of Power in Abia; Itʼs Doable  -  <span class="font-extrabold monts">HE., Alex Otti</span>
+                    <br><br>
+                    The Governor announced that the Abia government is in negotiations with the Enugu Electricity Distribution Company (EEDC)
+                </p>
+            </div>
+        </div>
+        <!-- SECOND SIDE -->
+        <div class="w-[75%] flex flex-col items-start justify-start pt-12">
+            <!-- NAV SIDE -->
+            <div class="flex-center gap-5">
+                <div class="flex-center text-sm opacity-60 gap-5">
+                    <p>HOME</p>
+                    <p class="border-l pl-3 border-[#c2b098]">ABOUT</p>
+                    <p class="border-l pl-3 border-[#c2b098]">ACCOUNTS</p>
+                    <p class="border-l pl-3 border-[#c2b098]">BUDGET</p>
+                    <p class="border-l pl-3 border-[#c2b098]">INFLOW</p>
+                    <p class="border-l pl-3 border-[#c2b098]">EXPENDITURE</p>
+                    <p class="border-l pl-3 border-[#c2b098]">DEBT</p>
+                    <p class="border-l pl-3 border-[#c2b098]">MANDATES</p>
+                </div>
+                <div class="flex-center gap-2 text-xs">
+                    <a href="#" class="bg-[#dad6bf] py-2 px-5 rounded-full">CONTACT ADMIN</a>
+                    <a href="#" class="bg-[#c2b098] py-2 px-5 rounded-full">FINANCE TEAM</a>
+                </div>
+            </div>
+            <!-- SCROLLING SIDE -->
+            <div>
+                <div class="marquee-footer mt-5">
+                    <div class="marquee">
+                        <div class="marquee_text">
+                            <ul class="marquee-content-primary">
+                                <li>March IGR lower than February IGR by 4%</li>
+                                <li>97 outflows from 5 Accounts 24hrs ago</li>
+                                <li>New loan from IMF received 5hrs ago</li>
+                                <li>April expenditures higher than March expenditures by 17%</li>
+                                <li>There has been 82 inflows into 7 accounts 24hrs ago</li>
+                            </ul>
+                            <ul class="marquee-content-secondary">
+                                <li>March IGR lower than February IGR by 4%</li>
+                                <li>97 outflows from 5 Accounts 24hrs ago</li>
+                                <li>New loan from IMF received 5hrs ago</li>
+                                <li>April expenditures higher than March expenditures by 17%</li>
+                                <li>There has been 82 inflows into 7 accounts 24hrs ago</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h1 class="text-center w-full poppins text-xl mt-5">Welcome: Accountant General</h1>
+            <div class="py-5 px-2 flex justify-center items-start gap-2">
+                <!-- FIRST ROW -->
+                <div class="border-2 border-[#b4d0b6] h-[735px] w-[260px] mx-auto flex-col flex justify-between text-center rounded-t-3xl overflow-hidden">
+                    <h1 class="bg-[#cce7ce] p-2 poppins text-sm">Stake Account Balances <br> (50 Accounts)</h1>
+                    <div class="relative">
+                        <div class="rounded-xl p-4 border bg-white bg-opacity-50 border-[#cce7ce] m-2 text-sm">
+                            <h1 class="mb-1 pb-1 border-b border-black border-opacity-10">GTBANK - SINKING FUND ACCT.</h1>
+                            <p class="poppins">N50,000,000,000:00</p>
+                        </div>
+                        <div class="rounded-xl p-4 border bg-white bg-opacity-50 border-[#cce7ce] m-2 text-sm">
+                            <h1 class="mb-1 pb-1 border-b border-black border-opacity-10">ZENITH - MSME SUPPORT FUND.</h1>
+                            <p class="poppins">N50,000,000,000:00</p>
+                        </div>
+                        <div class="rounded-xl p-4 border bg-white bg-opacity-50 border-[#cce7ce] m-2 text-sm">
+                            <h1 class="mb-1 pb-1 border-b border-black border-opacity-10">FIDELITY - FAAC 1.</h1>
+                            <p class="poppins">N50,000,000,000:00</p>
+                        </div>
+                        <div class="rounded-xl p-4 border bg-white bg-opacity-50 border-[#cce7ce] m-2 text-sm">
+                            <h1 class="mb-1 pb-1 border-b border-black border-opacity-10">UIBNAK - INFAGAFCU2N.</h1>
+                            <p class="poppins">N50,000,000,000:00</p>
+                        </div>
+                        <div class="rounded-xl p-4 border bg-white bg-opacity-50 border-[#cce7ce] m-2 text-sm">
+                            <h1 class="mb-1 pb-1 border-b border-black border-opacity-10">SIGNATURE - IGR CONSOLIDATED.</h1>
+                            <p class="poppins">N50,000,000,000:00</p>
+                        </div>
+                        <div class="rounded-xl p-4 border bg-white bg-opacity-50 border-[#cce7ce] mt-2 text-sm">
+                            <h1 class="mb-1 pb-1 border-b border-black border-opacity-10">ACCESS - EXPENDITURE 1.</h1>
+                            <p class="poppins">N50,000,000,000:00</p>
+                        </div>
+
+                    </div>
+                    <div class="p-4 text-sm bg-[#d1b366] w-full">
+                        <h1 class="mb-1 pb-1 border-b border-black border-opacity-10">ACCESS - EXPENDITURE 1.</h1>
+                        <p class="poppins">N50,000,000,000:00</p>
+                    </div>
+                </div>
+                <!-- SECOND ROW -->
+                <div>
+
+                    <div class="mb-4 border-2 border-[#c2ae96] h-[350px] w-[230px] mx-auto flex-col flex justify-between text-center rounded-t-3xl overflow-hidden">
+                        <h1 class="bg-[#c2ae96] p-2 poppins text-sm">Expenditure</h1>
+                        <div class="relative">
+                            <div class="rounded-xl p-4 border bg-white bg-opacity-50 border-[#cce7ce] m-2 text-sm">
+                                <h1 class="mb-1 pb-1 border-b border-black border-opacity-10 text-xs">GTBANK - SINKING FUND ACCT.</h1>
+                                <p class="poppins">N50,000,000,000:00</p>
+                            </div>
+                            <div class="rounded-xl p-4 border bg-white bg-opacity-50 border-[#cce7ce] m-2 text-sm">
+                                <h1 class="mb-1 pb-1 border-b border-black border-opacity-10 text-xs">ZENITH - MSME SUPPORT FUND.</h1>
+                                <p class="poppins">N50,000,000,000:00</p>
+                            </div>
+                        </div>
+                        <div class="p-2 text-sm bg-[#c2ae96] w-full">
+                            <h1 class="">Total Balance.</h1>
+                            <p class="poppins">N50,000,000,000:00</p>
+                        </div>
+                    </div>
+
+                    <div class="border-2 border-[#00b8cb] h-[370px] w-[230px] mx-auto flex-col flex justify-between text-center rounded-t-3xl overflow-hidden">
+                        <h1 class="bg-[#00b8cb] p-2 poppins text-sm">Expenditure</h1>
+                        <div class="relative">
+                            <img src="/assets/chart.png" alt="">
+                        </div>
+                        <div class="p-2 text-sm bg-[#eeede3] w-full">
+                            <div class="space-y-1 text-xs opacity-80">
+                                <p>Personel- N8,600,000,000</p>
+                                <p>Overhead- N5,050,000,000</p>
+                                <p>Capital- N20,290,000,000</p>
+                            </div>
+                            <p class="poppins mt-1 font-extrabold">Total Exp. N32,000,000,000</p>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- THIRD ROW -->
+                <div>
+                    <div class="mb-4 border-2 border-[#8ed7f6] h-[350px] w-[220px] mx-auto flex-col flex justify-between text-center rounded-t-3xl overflow-hidden">
+                        <h1 class="bg-[#8ed7f6] p-2 poppins text-sm">Expenditure</h1>
+                        <div class="relative">
+                            <h1 class="text-[#d1b366] p-2 poppins text-sm">Revenue Actual to Date</h1>
+                            <div class="flex-center flex-col w-[70%] mx-auto">
+                                <div style="width: 100%; display: flex; align-items: center; justify-content: center;" class="relative"
+                                    id="chart--container">
+                                    <canvas id="myChart" width="400" height="400"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2 text-sm bg-[#8ed7f6] w-full">
+                            <h1 class="">Total Balance.</h1>
+                            <p class="poppins">N50,000,000,000:00</p>
+                        </div>
+                    </div>
+                    <div class="mb-4 text-white border-2 border-[#cc6006] h-[370px] w-[220px] mx-auto flex-col flex justify-between text-center rounded-t-3xl overflow-hidden">
+                        <h1 class="bg-[#cc6006] p-2 poppins text-sm">Expenditure</h1>
+                        <div class="relative">
+                            <h1 class="text-[#cc6006] p-2 poppins text-sm">Revenue Actual to Date</h1>
+                            <img src="/assets/pie.png" alt="" class="w-[80%] mx-auto">
+                        </div>
+                        <div class="p-2 text-sm bg-[#cc6006] w-full">
+                            <h1 class="">Expenditure Implementation Balance</h1>
+                            <p class="poppins">N100,000,000,000:00</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- FOURTH ROW -->
+                <div class="border-2 border-[#b4d0b6] h-[735px] w-[260px] mx-auto flex-col flex justify-between text-center rounded-t-3xl overflow-hidden">
+                    <h1 class="bg-[#cce7ce] p-2 poppins text-sm">Stake Account Balances <br> (50 Accounts)</h1>
+                    <div class="relative">
+                        <div class="rounded-xl p-4 border bg-white bg-opacity-50 border-[#cce7ce] m-2 text-sm">
+                            <h1 class="mb-1 pb-1 border-b border-black border-opacity-10">GTBANK - SINKING FUND ACCT.</h1>
+                            <p class="poppins">N50,000,000,000:00</p>
+                        </div>
+                        <div class="rounded-xl p-4 border bg-white bg-opacity-50 border-[#cce7ce] m-2 text-sm">
+                            <h1 class="mb-1 pb-1 border-b border-black border-opacity-10">ZENITH - MSME SUPPORT FUND.</h1>
+                            <p class="poppins">N50,000,000,000:00</p>
+                        </div>
+                        <div class="rounded-xl p-4 border bg-white bg-opacity-50 border-[#cce7ce] m-2 text-sm">
+                            <h1 class="mb-1 pb-1 border-b border-black border-opacity-10">FIDELITY - FAAC 1.</h1>
+                            <p class="poppins">N50,000,000,000:00</p>
+                        </div>
+                        <div class="rounded-xl p-4 border bg-white bg-opacity-50 border-[#cce7ce] m-2 text-sm">
+                            <h1 class="mb-1 pb-1 border-b border-black border-opacity-10">UIBNAK - INFAGAFCU2N.</h1>
+                            <p class="poppins">N50,000,000,000:00</p>
+                        </div>
+                        <div class="rounded-xl p-4 border bg-white bg-opacity-50 border-[#cce7ce] m-2 text-sm">
+                            <h1 class="mb-1 pb-1 border-b border-black border-opacity-10">SIGNATURE - IGR CONSOLIDATED.</h1>
+                            <p class="poppins">N50,000,000,000:00</p>
+                        </div>
+                        <div class="rounded-xl p-4 border bg-white bg-opacity-50 border-[#cce7ce] mt-2 text-sm">
+                            <h1 class="mb-1 pb-1 border-b border-black border-opacity-10">ACCESS - EXPENDITURE 1.</h1>
+                            <p class="poppins">N50,000,000,000:00</p>
+                        </div>
+
+                    </div>
+                    <div class="p-4 text-sm bg-[#d1b366] w-full">
+                        <h1 class="mb-1 pb-1 border-b border-black border-opacity-10">ACCESS - EXPENDITURE 1.</h1>
+                        <p class="poppins">N50,000,000,000:00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var marqueeContentPrimary = document.querySelector(".marquee-content-primary");
+            var marqueeWidth = marqueeContentPrimary.offsetWidth;
+            document.documentElement.style.setProperty('--marquee-padding', marqueeWidth + 'px');
+        });
+
+
+
+        Chart.defaults.font.size = 10;
+        Chart.defaults.fontFamily = 'montserrat';
+        Chart.defaults.fontFamily = 600;
+        const chartData = {
+            labels: ['Personel', 'Overhead', 'Capex'],
+            datasets: [{
+                data: [40, 22.8, 15],
+                backgroundColor: ['#ccae8d', '#c3596d', '#976e4a'],
+                lineTension: 0.1,
+                showActualPercentages: true,
+                borderColor: "#fff",
+                pointBackgroundColor: "#adadad",
+                pointBorderWidth: 1,
+                pointHoverRadius: 5,
+                barPercentage: 0.25,
+                categoryPercentage: 0.5,
+                hoverOffset: 5,
+                datalabels: {
+                    color: "white",
+                }
+            }]
+        };
+        const config = {
+            type: 'doughnut',
+            data: chartData,
+            options: {
+                plugins: {
+                    legend: {
+                        display: false
+                    },
+
+                    tooltips: {
+                        enabled: true,
+                    },
+
+                    datalabels: {
+                        formatter: (value, context) => {
+                            const datapoints = context.chart.data.datasets[0].data;
+                            function totalSum(total, datapoint) {
+                                return total + datapoint;
+                            }
+                            const totalValue = datapoints.reduce(totalSum, 0);
+                            const percentageValue = (value / totalValue * 100).toFixed(1);
+                            return `${percentageValue}%`;
+                        }
+                    },
+                },
+                responsive: true,
+                animations: {
+                    tension: {
+                        duration: 900000,
+                        easing: 'linear',
+                        from: 1,
+                        to: 0,
+                        loop: true
+                    }
+                },
+            },
+            plugins: [ChartDataLabels],
+
+        };
+
+
+        function checkVisible(elm) {
+            var rect = elm.getBoundingClientRect();
+            var viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
+            return !(rect.bottom < 0 || rect.top - viewHeight >= 0);
+        }
+        window.addEventListener('touchmove', function () {
+            if (checkVisible(document.querySelector('#chart--container'))) {
+                new Chart(document.getElementById('myChart'), config);
+            }
+        });
+
+        new Chart(document.getElementById('myChart'), config);
+
+    </script>
+</body>
+</html>
