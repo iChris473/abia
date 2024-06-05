@@ -62,17 +62,57 @@
         <!-- SECOND SIDE -->
         <div class="w-[75%] flex flex-col items-start justify-start pt-12">
             <!-- NAV SIDE -->
-            <div class="flex-center gap-5">
-                <div class="flex-center text-sm opacity-60 gap-5">
-                    <p>HOME</p>
-                    <p class="border-l pl-3 border-[#c2b098]">ABOUT</p>
-                    <p class="border-l pl-3 border-[#c2b098]">ACCOUNTS</p>
-                    <p class="border-l pl-3 border-[#c2b098]">BUDGET</p>
-                    <p class="border-l pl-3 border-[#c2b098]">INFLOW</p>
-                    <p class="border-l pl-3 border-[#c2b098]">EXPENDITURE</p>
-                    <p class="border-l pl-3 border-[#c2b098]">DEBT</p>
-                    <p class="border-l pl-3 border-[#c2b098]">MANDATES</p>
-                </div>
+            <div class="flex-center gap-5 menu">
+                <ul class="flex-center text-sm opacity-60 gap-5 nav-list">
+                    <li>HOME</li>
+                    <li class="border-l pl-3 border-[#c2b098]">ABOUT</li>
+                    <li class="border-l pl-3 border-[#c2b098]">ACCOUNTS</li>
+                    <li class="border-l pl-3 border-[#c2b098] drop">
+                        BUDGET
+                        <ul>
+                            <li class="link">
+                              <a href="">Budget Submissions</a>
+                            </li>
+                            <li class="link">
+                              <a href="">Budget Performance</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="border-l pl-3 border-[#c2b098] drop">
+                        INFLOW
+                        <ul>
+                            <li class="link">
+                            <a href="">Total Summary</a>
+                            </li>
+                            <li class="link">
+                            <a href="">Visual Summary</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="border-l pl-3 border-[#c2b098] drop">
+                        EXPENDITURE
+                        <ul>
+                            <li class="link">
+                            <a href="">Expenditures</a>
+                            </li>
+                            <li class="link">
+                            <a href="">Total Expenditures & Balances</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="border-l pl-3 border-[#c2b098] drop">
+                        DEBT
+                        <ul>
+                            <li class="link">
+                              <a href="">Record Debt</a>
+                            </li>
+                            <li class="link">
+                              <a href="">Debt History</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="border-l pl-3 border-[#c2b098]">MANDATES</li>
+                </ul>
                 <div class="flex-center gap-2 text-xs">
                     <a href="#" class="bg-[#dad6bf] py-2 px-5 rounded-full">CONTACT ADMIN</a>
                     <a href="#" class="bg-[#c2b098] py-2 px-5 rounded-full">FINANCE TEAM</a>
